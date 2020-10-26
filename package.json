@@ -1,0 +1,26 @@
+{
+  "name": "open-trivia-cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:report": "npm run cypress:run && npm run cypress:report",
+    "cypress:report": "generate-mochawesome-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^5.4.0",
+    "cypress-cucumber-preprocessor": "^4.0.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "cypress-mochawesome-reporter": "^1.0.3",
+    "shx": "^0.3.3"
+  }
+}
