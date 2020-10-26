@@ -22,12 +22,12 @@ $ npm run cypress:run
 
 Run reports (needs to run after tests):
 ```sh
-$ npm run cypress:reports
+$ npm run cypress:report
 ```
 
 Run tests and report:
 ```sh
-$ npm run cypress:run:reports
+$ npm run cypress:run:report
 ```
 
 Open Cypress interface:
