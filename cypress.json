@@ -1,3 +1,5 @@
 {
-    "testFiles": "**/*.feature"
+  "testFiles": "**/*.feature",
+  "reporter": "cypress-mochawesome-reporter",
+  "videoCompression": 0
 }

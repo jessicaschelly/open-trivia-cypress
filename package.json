@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy": "cypress",
-    "start": "cypress run --spec **/*.features"
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:run:report": "npm run cypress:run && npm run cypress:report",
+    "cypress:report": "generate-mochawesome-report"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +18,9 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "cypress-mochawesome-reporter": "^1.0.3",
+    "shx": "^0.3.3"
   }
 }
